@@ -1,0 +1,8 @@
+{
+  "name": "topbis",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular",
+  "id": "25c7e2a8"
+}
