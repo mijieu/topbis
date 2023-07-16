@@ -3,15 +3,15 @@ import { IonicModule } from '@ionic/angular';
 
 import { ExploreContainerComponentModule } from '../explore-container/explore-container.module';
 
-import { Tab3Page } from './tab3.page';
+import { AddPage } from './add.page';
 
-describe('Tab3Page', () => {
-  let component: Tab3Page;
+describe('AddPage', () => {
+  let component: AddPage;
   let fixture: ComponentFixture<Tab3Page>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [Tab3Page],
+      declarations: [AddPage],
       imports: [IonicModule.forRoot(), ExploreContainerComponentModule]
     }).compileComponents();
 

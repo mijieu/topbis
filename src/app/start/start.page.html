@@ -1,0 +1,48 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Tobisgo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Achille</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <!-- <app-explore-container name="Start page"></app-explore-container> -->
+  
+  <!--<ion-list>
+    <ion-item *ngFor="let item of items">
+      <ion-thumbnail slot="start">
+        <img [src]="item.image" alt="Ad Image">
+      </ion-thumbnail>
+      <ion-label>
+        <h2>{{ item.title }}</h2>
+        <p>{{ item.description }}</p>
+        <ion-note>{{ item.price }}</ion-note>
+      </ion-label>
+    </ion-item>
+  </ion-list> -->
+  
+    <ion-grid class="ad-grid">
+    <ion-row>
+      <ion-col size="12" size-sm="6" size-md="4" [ngStyle]="{ 'height': getHeight() }" *ngFor="let item of items">
+        <ion-card>
+          <ion-img [src]="item.image_url" alt="Ad Image"></ion-img>
+          <ion-card-header>
+            <ion-card-title>{{ item.title }}</ion-card-title>
+          </ion-card-header>
+          <ion-card-content>
+            <p>{{ item.description }}</p>
+            <ion-note class="price">{{ item.price }}</ion-note>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+    
+</ion-content>
