@@ -1,6 +1,7 @@
 import { Component, HostListener } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
-import { ItemService } from '../entities/itemService'; 
+import { Router } from '@angular/router';
+import { ItemService } from '../services/itemService';
+import { Item } from '../entities/item';
 
 @Component({
   selector: 'app-start',
@@ -9,9 +10,10 @@ import { ItemService } from '../entities/itemService';
 })
 export class StartPage {
 
-  items: any[] = [];
+  items: Item[] = [];
+  notificationCount: number = 510;
   colHeight: string = '200px';
-  constructor(private itemService: ItemService, private http: HttpClient) {}
+  constructor(private itemService: ItemService, private router: Router) {}
 
   ngOnInit() {
     this.items = this.geItems();
@@ -19,9 +21,9 @@ export class StartPage {
   }
     
   geItems(): any[] {
-    this.http.get<any>('http://localhost:8080/items')
+    this.itemService.getItems()
       .subscribe(
-        response => {
+        (response: Item[])  => {
           this.items = response;
           console.log('API Response:', response);
         },
@@ -42,22 +44,9 @@ export class StartPage {
   getHeight(): string {
     return this.colHeight;
   }
-    
-  /*geItems(count: number): any[] {
-    const items = [];
 
-    for (let i = 0; i < count; i++) {
-      const ad = {
-        image: this.itemService.getImageUrl(),
-        title: this.itemService.getProductName(),
-        description: this.itemService.getDescription(),
-        price: this.itemService.getPrice()
-      };
-
-      items.push(ad);
-    }
-
-    return items;
-  }*/
+  navigateToProductDetail(item: Item) {
+    this.router.navigate(['/product-detail', item.id], { state: { item } });
+  }
 
 }
