@@ -1,0 +1,25 @@
+<nav class="mobile-nav">
+  <a [routerLink]="['/']" class="bloc-icon text-decoration-none py-2" [routerLinkActiveOptions]="{exact: true}" routerLinkActive="active" #rlh="routerLinkActive">
+      <img src="{{ rlh.isActive ? './assets/img/icons/active-icon/home-icon.svg' : './assets/img/icons/home-icon.svg' }}" />
+      <div [routerLinkActiveOptions]="{exact: true}" routerLinkActive="text-orange" class="text-gray">
+          Home
+      </div>
+  </a>
+  <a [routerLink]="['/search']" class="bloc-icon text-decoration-none py-2" routerLinkActive ="active" #rls="routerLinkActive">
+      <img src="{{ rls.isActive ? './assets/img/icons/active-icon/search.svg' : './assets/img/icons/search.svg' }}" />
+      <div routerLinkActive="text-orange" class="text-gray">Search</div>
+  </a>
+  <a [routerLink]="['/add']" class="bloc-icon text-decoration-none py-2" routerLinkActive ="active" #rlaa="routerLinkActive">
+        <img src="{{ rlaa.isActive ? './assets/img/icons/active-icon/insert.svg' : './assets/img/icons/insert.svg' }}" />
+        <div routerLinkActive="text-orange" class="text-gray">Insert</div>
+  </a>
+
+  <a [routerLink]="['/message']" class="bloc-icon text-decoration-none py-2" routerLinkActive ="active" #rlm="routerLinkActive">
+        <img src="{{ rlm.isActive ? './assets/img/icons/active-icon/msg.svg' : './assets/img/icons/msg.svg' }}" />
+        <div routerLinkActive="text-orange" class="text-gray">Message</div>
+    </a>
+    <a [routerLink]="['/profile']" class="bloc-icon text-decoration-none py-2" routerLinkActive ="active" #rly="routerLinkActive">
+        <img src="{{ rly.isActive ? './assets/img/icons/active-icon/you.svg' : './assets/img/icons/you.svg' }}" />
+        <div routerLinkActive="text-orange" class="text-gray">You</div>
+    </a>
+</nav>

@@ -19,6 +19,7 @@ log.txt
 
 # Ionic
 /.ionic
+/.angular
 /www
 /platforms
 /plugins

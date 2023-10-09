@@ -1,0 +1,83 @@
+<ion-content class=" mt-2 mb-5 pb-5">
+
+  <div class="container">
+      <div class="row align-items-center border-b-gray  pb-2 pt-4 px-2">
+          <div class="col-4"></div>
+          <div class="col-4 text-center">
+              <h2 class="font-14 fw-600 mb-0">Insert Item</h2>
+          </div>
+
+          <div class="col-4 text-center d-flex align-items-center">
+              <img src="./assets/img/icons/eye.svg" />
+              <span class="mb-0 text-green ps-2 font-14">Preview</span>
+          </div>
+      </div>
+
+
+      <div class=" row py-4 border-bottom px-2">
+          <div class="col-12 text-center mb-3">
+              <img src="./assets/img/upload-img.png" class="w-50" />
+          </div>
+          <div class="col">
+              <a routerLink="#" class="text-decoration-none d-flex align-items-center">
+                  <span>
+                      <img src="./assets/img/add-image.png" style="width: 25px;" />
+                  </span>
+                  <span class="text-green ps-2 font-13">Add Image</span>
+              </a>
+          </div>
+
+      </div>
+
+      <form>
+          <div class="row border-bottom py-4 px-2">
+              <div class="col-12 d-flex ">
+                  <div class="form-check col-3">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                      <label class="form-check-label" for="flexRadioDefault1">
+                          I sell
+                      </label>
+                  </div>
+                  <div class="form-check col-3">
+                      <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2"
+                          checked>
+                      <label class="form-check-label" for="flexRadioDefault2">
+                          I search
+                      </label>
+                  </div>
+
+
+              </div>
+              <div class="col-12 pt-3">
+                  <input type="email" class="form-control rounded-pill" placeholder="Title">
+              </div>
+          </div>
+          <div class="row px-2">
+              <div class="col-12 py-3">
+                  <h2 class="font-14 fw-600 mb-0">Category</h2>
+                  <a routerLink="#" class="text-light-green font-12">Search Categories</a>
+              </div>
+          </div>
+          
+      </form>
+
+
+  </div>
+
+  <div class="border-bottom">
+  </div>
+
+  <div class="container">
+      <div class="row px-2">
+          <div class="col-12 py-3">
+              <div class="form-floating">
+                  <textarea class="form-control" placeholder="Product Description" id="floatingTextarea2"
+                      style="height: 150px"></textarea>
+                  <label for="floatingTextarea2 text-gray">Product Description</label>
+              </div>
+          </div>
+      </div>
+  </div>
+</ion-content>
+
+<app-menu></app-menu>

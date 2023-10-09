@@ -1,0 +1,163 @@
+<ion-content [scrollEvents]="true" (ionScroll)="onScroll($event)" class=" mt-2 mb-5 pb-5">
+  <div class="px-3 pt-2 shadow-0" id="topnavbar">
+    <div class="logo-top">
+      <img class="top-logo-width" src="./assets/img/logo.png" />
+    </div>
+  
+    <div class="icon-top">
+      <img src="./assets/img/icons/notification.svg" />
+    </div>
+  
+    <div class="search-bar-top bg-white rounded-pill">
+      <div class="input-group border rounded-pill ps-2 pe-1 py-1 ">
+        <input type="text" class="form-control border-0 " placeholder="What are you looking for?">
+        <div class="input-group-append">
+          <span class="input-group-text bg-green rounded-pill">
+            <img src="./assets/img/icons/searching-bar.svg" />
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="content">
+    <div class="container">
+      <h5 class="font-14 fw-600 px-2 pb-2">Categories</h5>
+      <div class="d-flex overflow-auto px-2 justify-content-between">
+
+        <div class="categorie-item ms-2">
+
+
+          <img src="./assets/img/categories-icon/realestate.svg" />
+          <p class="font-10 fw-500 mt-2">
+            Real Estate
+          </p>
+        </div>
+
+        <div class="categorie-item ms-2">
+          <img src="./assets/img/categories-icon/vehicles.svg" />
+          <p class="font-10 fw-500 mt-2">
+            Vehicles
+          </p>
+        </div>
+
+        <div class="categorie-item ms-2">
+          <img src="./assets/img/categories-icon/electronics.svg" />
+          <p class="font-10 fw-500 mt-2">
+            Electronics
+          </p>
+        </div>
+
+        <div class="categorie-item ms-2">
+          <img src="./assets/img/categories-icon/clothing.svg" />
+          <p class="font-10 fw-500 mt-2">
+            Clothing
+          </p>
+        </div>
+
+        <div class="categorie-item ms-2">
+          <img src="./assets/img/categories-icon/other.svg" />
+          <p class="font-10 fw-500 mt-2">
+            Other
+          </p>
+        </div>
+
+      </div>
+    </div>
+    <hr class="border border-4 ">
+    <div class="container">
+      <div class="row px-2">
+        <h5 class="font-14 fw-600 pb-2">Recommendations</h5>
+        <div class="col-6">
+          <div class="card border-0">
+            <img src="./assets/img/recom-1.png" class="card-img-top" alt="...">
+            <div class="card-body p-2">
+              <div class="bg-green like-btn">
+                <img src="./assets/img/icons/favorite-heart.svg" />
+              </div>
+              <h5 class="text-green font-11 text-truncate">iPhone 8 White 64 gb</h5>
+              <p class="text-muted font-12 mb-0">12053, Berlin</p>
+              <p class="font-14 fw-600">100 €</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card border-0">
+            <img src="./assets/img/recom-2.png" class="card-img-top" alt="...">
+            <div class="card-body p-2">
+              <div class="bg-green dislike-btn">
+                <img src="./assets/img/icons/heart-not-fav.svg" />
+
+              </div>
+
+              <h5 class="text-green font-11 text-truncate">Macbook Air 13” (used for only...</h5>
+              <p class="text-muted font-12 mb-0">12053, Berlin</p>
+              <p class="font-14 fw-600">1000 €</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card border-0">
+            <img src="./assets/img/product-2.png" class="card-img-top" alt="...">
+            <div class="card-body p-2">
+              <div class="bg-green dislike-btn">
+                <img src="./assets/img/icons/heart-not-fav.svg" />
+
+              </div>
+
+              <h5 class="text-green font-11 text-truncate">Samsung smart-watch</h5>
+              <p class="text-muted font-12 mb-0">12053, Berlin</p>
+              <p class="font-14 fw-600">200 €</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card border-0">
+            <img src="./assets/img/product-3.png" class="card-img-top" alt="...">
+            <div class="card-body p-2">
+              <div class="bg-green dislike-btn">
+                <img src="./assets/img/icons/heart-not-fav.svg" />
+
+              </div>
+
+              <h5 class="text-green font-11 text-truncate">JBL Headphones</h5>
+              <p class="text-muted font-12 mb-0">12053, Berlin</p>
+              <p class="font-14 fw-600">300 €</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card border-0">
+            <img src="./assets/img/recom-1.png" class="card-img-top" alt="...">
+            <div class="card-body p-2">
+              <div class="bg-green dislike-btn">
+                <img src="./assets/img/icons/heart-not-fav.svg" />
+
+              </div>
+
+              <h5 class="text-green font-11 text-truncate">iPhone 8 White 64 gb</h5>
+              <p class="text-muted font-12 mb-0">12053, Berlin</p>
+              <p class="font-14 fw-600">100 €</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="card border-0">
+            <img src="./assets/img/recom-2.png" class="card-img-top" alt="...">
+            <div class="card-body p-2">
+              <div class="bg-green dislike-btn">
+                <img src="./assets/img/icons/heart-not-fav.svg" />
+              </div>
+
+              <h5 class="text-green font-11 text-truncate">Macbook Air 13” (used for only...)</h5>
+              <p class="text-muted font-12 mb-0">12053, Berlin</p>
+              <p class="font-14 fw-600">1000 €</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</ion-content>
+
+<app-menu></app-menu>
