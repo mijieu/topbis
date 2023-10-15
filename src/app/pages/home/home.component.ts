@@ -33,8 +33,8 @@ export class HomeComponent  implements OnInit {
           searchbarTop.classList.add("centered-search-bar");
           (logoTop as HTMLImageElement).src = "./assets/img/small-logo.png";
           (logoWidth as HTMLImageElement).style.width = "40px";
-          topbar.style.height = "60px";
-          (searchbarTop as HTMLElement).style.top = "32px";
+          // topbar.style.height = "60px";
+          (searchbarTop as HTMLElement).style.display = "block";
           topbar.style.display = "flex";
           topbar.style.alignItems = "center";
   
@@ -43,11 +43,11 @@ export class HomeComponent  implements OnInit {
           searchbarTop.classList.remove("centered-search-bar");
           (logoTop as HTMLImageElement).src = "./assets/img/logo.png";
           (logoWidth as HTMLImageElement).style.width = "100px";
-          topbar.style.height = "100px";
-          (searchbarTop as HTMLElement).style.top = "46px";
-          topbar.style.display = "block";
+          // topbar.style.height = "100px";
+          (searchbarTop as HTMLElement).style.display = "block";
+          topbar.style.display = "flex";
       }
-      searchbarTop.classList.add("transition-effect");
+      // logoTop.classList.add("transition-effect");
 
   }
 
